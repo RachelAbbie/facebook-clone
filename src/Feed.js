@@ -1,12 +1,22 @@
 import React from 'react'
 import './Feed.css';
+import MessageSender from './MessageSender';
+import Post from './Post';
 import StoryReel from './StoryReel';
+
+
 function Feed() {
     return (
         <div className="feed"> 
             <StoryReel />
-            {/* Story */}
-            {/* MessageSender */}
+            <MessageSender />
+            <Post
+                profilePic={profilePic}
+                message={message}
+                timestamp={timestamp}
+                username={username}
+                image={image}
+            />
         </div>
     )
 }
